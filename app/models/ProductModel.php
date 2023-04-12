@@ -1,13 +1,20 @@
 <?php
-class ProductModel{
-    protected $_table = 'products';
+class ProductModel extends Model{
+    protected $_table = 'sanpham';
+
+    function tableFill(){
+        return $this->_table;
+    }
+
+    function fieldFill(){
+        return "*";
+    }
 
     public function getList(){
-        $data = [
-            'Item 1',
-            'Item 2',
-            'Item 3'
-        ];
+        // $reuslt[] = parent::get();
+        $sql = "Select * from $this->_table";
+        $reuslt = $this->db->query($sql);
+        $data[] =  $this->db->fetchAll($reuslt);
         return $data;
     }
 }

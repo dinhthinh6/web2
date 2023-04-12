@@ -1,39 +1,40 @@
 <div class="container box">
     <div class="row justify-content-around box align-items-center">
         <div class="col-8-sm bg-light p-4">
-            <form>
+            <form id="formDangKy" method="post" action="">
                 <h2 class="text-center">Đăng Ký Tài Khoản</h2>
                 <div class="form-group">
                     <label for="form-name">Họ và tên</label>
-                    <input type="text" name="" id="form-name" class="form-control" placeholder=""
+                    <input type="text" name="fullname" id="form-name" class="form-control" placeholder=""
                         aria-describedby="helpId">
                 </div>
                 <div class="form-group">
                     <label for="form-user">Tài Khoản</label>
-                    <input type="text" class="form-control" name="" id="form-user" aria-describedby="helpId"
+                    <input type="text" class="form-control" name="username" id="form-user" aria-describedby="helpId"
                         placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="form-password-register">Mật Khẩu</label>
-                    <input type="password" class="form-control" name="" id="form-password-register"
+                    <input type="password" class="form-control" name="password" id="form-password-register"
                         aria-describedby="helpId" placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="form-password-comfirm-register">Xác nhận mật khẩu</label>
-                    <input type="password" class="form-control" name="" id="form-password-comfirm-register"
+                    <input type="password" class="form-control" name="confirm-password" id="form-password-comfirm-register"
                         aria-describedby="helpId" placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="form-email">Email</label>
-                    <input type="email" class="form-control" name="" id="form-email" aria-describedby="helpId"
+                    <input type="email" class="form-control" name="email" id="form-email" aria-describedby="helpId"
                         placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="form-number">Số điện thoại</label>
-                    <input type="tel" class="form-control" name="" id="form-number" aria-describedby="helpId"
-                        placeholder="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input type="tel" class="form-control" name="phoneNumber" id="form-number" aria-describedby="helpId"
+                        placeholder="" >
+                        <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" -->
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="gender">Giới tính</label>
                     <div>
                         <div class="form-check">
@@ -46,10 +47,10 @@
                             <label for="form-check-2" class="form-check-lable">Nữ</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="form-address">Địa chỉ</label>
-                    <input type="email" class="form-control" name="" id="form-address" aria-describedby="helpId"
+                    <input type="text" class="form-control" name="address" id="form-address" aria-describedby="helpId"
                         placeholder="">
                 </div>
                 <input type="submit" value="Đăng ký" class="btn btn-primary btn-block">

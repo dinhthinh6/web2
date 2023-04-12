@@ -3,12 +3,12 @@ class Shop extends Controller{
     
     public $data = [];
 
-    public $model_shop;
+    public $product;
     public function __construct(){
-        $this->model_home = $this->model('HomeModel');
+        $this->product = $this->model('ProductModel');
     }
     public function index(){
-        $list =  $this->model_home->getList();
+        $list =  $this->product->getList();
         $this->data['sub_content']['list'] = $list;
         $this->data['sub_content']['page_title'] = "Web ban hang`!";
         $this->data['content'] = 'home/index';

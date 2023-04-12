@@ -6,20 +6,20 @@ abstract class Model extends Database{
         $this->db = new Database();
     }
 
-    abstract function tableFill();
+    // abstract function tableFill();
 
-    abstract function fieldFill();
+    // abstract function fieldFill();
 
-    public function get(){
-        $tableName = $this->tableFill();
-        $fieldSelect = $this->fieldFill();
-        $sql = "Select $fieldSelect from $tableName";
+    // public function get(){
+    //     $tableName = $this->tableFill();
+    //     $fieldSelect = $this->fieldFill();
+    //     $sql = "Select $fieldSelect from $tableName";
 
-        $query = $this->query($sql);
+    //     $query = $this->db->query($sql);
 
-        if(!empty($query)){
-            return $this->db->fetchAll($query);
-        }
-        return false;
-    }
+    //     if(!empty($query)){
+    //         return $this->fetchAll($query);
+    //     }
+    //     return false;
+    // }
 }

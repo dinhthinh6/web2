@@ -23,13 +23,13 @@
 
     <?php self::render($content, $sub_content); ?>
     <!-- <div id=" content">
-    
+
     </div> -->
     <?php self::render('block/footer'); ?>
 
 
     </body>
-    <script src="<?php echo _WEB_ROOT . '/Public/js/signup.js'; ?>"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -39,5 +39,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script> -->
+    <script src="<?php echo _WEB_ROOT . '/Public/js/jquery-3.6.3.min.js'; ?>"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
+        type="text/javascript"></script>
+    <script src="<?php echo _WEB_ROOT . '/Public/js/signup.js'; ?>"></script>
 
 </html>
